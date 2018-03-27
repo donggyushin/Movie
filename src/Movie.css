@@ -1,0 +1,45 @@
+.Movie {
+    background-color: white;
+    width: 38%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+
+.Movie__columns-poster{
+    position: relative;
+    top : -20px;
+    left : -20px;
+    box-shadow: -10px 19px 38px rgba(83, 83, 83, 0.3), 10px 15px 12px rgba(80,80,80,0.22);
+}
+
+.Movie__columns{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Movie__columns-genres{
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:320px) and (max-width:950px) {
+    .Movie {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .Movie__columns-poster{
+        width: 100%;
+        top : 0;
+        left : 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Movie__columns{
+        width: 100%;
+    }
+}
